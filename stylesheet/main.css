@@ -366,7 +366,7 @@ footer hr {
     }
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 414px) {
     .footer-nav > nav {
         display: none;
     }
