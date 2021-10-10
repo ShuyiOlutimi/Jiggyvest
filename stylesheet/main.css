@@ -366,6 +366,18 @@ footer hr {
     }
 }
 
+@media (max-width: 1175px) {
+    .footer-nav > nav {
+        display: none;
+    }
+
+    .footer-nav > :nth-child(2) {
+        width: 100%;
+        align-self: end;
+        margin-block-start: 0;
+    }
+}
+
 /* FOCUS */
 :focus {
     outline: 3px solid currentColor;
