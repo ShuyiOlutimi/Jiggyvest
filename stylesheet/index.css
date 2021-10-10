@@ -26,7 +26,6 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
     background-color: var(--clr-white);
     padding: .45rem;
     border-radius: 6px;
@@ -130,7 +129,7 @@ button[type=submit] {
 .newsletter {
     max-width: 50rem;
     text-align: center;
-    padding-block: var(--s4);
+    padding-block: var(--s3);
     background-color: var(--clr-jiggy-blue);
     border-radius: 40px;
 }
