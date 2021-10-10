@@ -280,7 +280,16 @@ button {
     padding-bottom: 1rem;
 }
 
-
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  @supports (width: min(250px, 100%)) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+  }
 /* UTILITIES */
 /* These styles do only one thing and one thing only */
 .container {
@@ -510,12 +519,6 @@ footer hr {
 @media (max-width: 1175px) {
     footer>img {
         display: none;
-    }
-
-    .footer-nav > :nth-child(2) {
-        width: 100%;
-        margin-top: var(--s1);
-        align-self: end;
     }
 }
 
