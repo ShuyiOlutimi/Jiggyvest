@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="stylesheet/main.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+        <title>Jiggyvest - All Events</title>
+    </head>
 <body>
-    <header>
-        <img src="" alt="">
+    <header class="container cluster">
+        <a href="#">
+            <img src="img/jiggyvest-red.svg" alt="Jiggyvest Logo">
+        </a>
 
-        <nav>
-            <ul>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Memes</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
+        <burger-menu max-width="600">
+            <nav class="navigation" aria-label="primary">
+                <ul class="cluster">
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Memes</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </burger-menu>
     </header>
 
     <main>
@@ -93,11 +105,12 @@
         </section>
     </main>
 
-    <footer>
-        <img src="" alt="">
-        <nav>
+    <footer class="switcher">
+        <img src="img/footer-illustration.svg" alt="">
+
+        <div class="footer-nav">
             <nav>
-                <ul>
+                <ul class="cluster">
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Memes</a></li>
@@ -105,16 +118,21 @@
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
-            <hr>
+
             <div>
-                <img src="" alt="">
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <hr>
+                <div class="cluster">
+                    <img src="img/stay-jiggy-logo.svg" alt="">
+                    <div class="cluster">
+                        <a href="#"><img src="img/twitter-logo.svg" alt="#"></a>
+                        <a href="#"><img src="img/instagram-logo.svg" alt=""></a>
+                        <a href="#"><img src="img/tik-tok-logo.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/burger-menu.js" type="module" defer></script>
 </body>
 </html>
