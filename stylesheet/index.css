@@ -1,0 +1,158 @@
+/* MAIN */
+main {
+    margin-block-start: 0 !important;
+    /* stack component is a class selector and has higher specificity than element selector, I am overriding with !important */
+}
+
+/* HERO */
+.hero {
+    background-color: rgba(229, 229, 229, .2);
+    padding-block-start: var(--s4);
+}
+
+.hero-text {
+    padding-block-end: var(--s3);
+}
+
+.hero h1 {
+    color: var(--clr-jiggy-blue);
+}
+
+.hero h1>span {
+    color: var(--clr-jiggy-red);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: var(--clr-white);
+    padding: .45rem;
+    border-radius: 6px;
+}
+
+@media (max-width:480px) {
+    form {
+        flex-direction: column;
+        background-color: #ffffff00;
+    }
+}
+
+input[type=email] {
+    all: unset;
+    color: var(--clr-faded-grey);
+}
+
+@media (max-width:480px) {
+    input[type=email] {
+        border: 2px solid currentColor;
+        align-self: flex-start;
+        background-color: var(--clr-white);
+        padding: .65rem;
+    }
+}
+
+button[type=submit] {
+    all: unset;
+    color: var(--clr-white);
+    display: inline-block;
+    background-color: var(--clr-jiggy-red);
+    padding-block: var(--s-1);
+    padding-inline: var(--s1);
+    border-radius: 6px;
+}
+
+@media (max-width:480px) {
+    button[type="submit"] {
+        margin-block-start: var(--s1);
+        align-self: flex-start;
+    }
+}
+
+.hero-img {
+    align-self: center;
+}
+
+/* ABOUT US */
+.about-us {
+    margin-block-start: var(--s4);
+}
+
+.about-us h2 {
+    color: var(--clr-jiggy-red);
+
+}
+
+.about-us h3 {
+    color: var(--clr-jiggy-blue);
+
+}
+
+.about-us p {
+    font-weight: var(--fw-700);
+}
+
+/* WHAT WE DO */
+
+.curate {
+    background-color: var(--clr-jiggy-azure);
+    padding-block: var(--s4);
+}
+
+.curate .switcher {
+    align-items: center;
+}
+
+/* EVENT ORGANIZERS */
+.event-organizers .card {
+    background-color: var(--clr-jiggy-azure);
+    border-radius: 30px 0px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.event-organizers .card>*+* {
+    margin-block-start: .75rem;
+}
+
+.event-organizers .card hr {
+    max-width: 50px;
+    height: 3px;
+    color: var(--clr-jiggy-red);
+    background-color: var(--clr-jiggy-red);
+}
+
+/* NEWSLETTER */
+.newsletter {
+    width: 80%;
+    max-width: 50rem;
+    padding-block: var(--s4);
+    background-color: var(--clr-jiggy-blue);
+    border-radius: 50px;
+}
+
+.newsletter > article {
+    padding-inline: var(--s0);
+}
+
+.newsletter h2,
+.newsletter h3,
+.newsletter p {
+    color: var(--clr-white);
+}
+
+.newsletter form {
+    border-radius: 100vw;
+}
+
+.newsletter button[type=submit] {
+    border-radius: 100vw;
+}
+
+@media (max-width:480px) {
+    .newsletter button[type=submit],
+    .newsletter input[type=email] {
+        align-self: center;
+    }
+}
