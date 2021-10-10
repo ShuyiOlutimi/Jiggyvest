@@ -97,6 +97,7 @@ button[type=submit] {
 
 .curate {
     background-color: var(--clr-jiggy-azure);
+    background-image: url(../img/spiral-background.png);
     padding-block: var(--s4);
 }
 
