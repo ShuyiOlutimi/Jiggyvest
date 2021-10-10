@@ -136,7 +136,7 @@ button[type=submit] {
 }
 
 .newsletter > article {
-    padding-inline: var(--s1) !important;
+    padding-inline: var(--s1);
 }
 
 .newsletter h2,
