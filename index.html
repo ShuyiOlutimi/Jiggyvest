@@ -2,19 +2,156 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header>
-            <img src="" alt="">
+    <link rel="stylesheet" href="stylesheet/main.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <title>Jiggyvest - Event Curation</title>
+</head>
+
+<body class="stack">
+    <header class="container cluster">
+        <a href="#">
+            <img src="img/jiggyvest-red.svg" alt="Jiggyvest Logo">
+        </a>
+
+        <burger-menu max-width="600">
+            <nav class="navigation" aria-label="primary">
+                <ul class="cluster">
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Memes</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </burger-menu>
+    </header>
+
+    <main class="stack">
+        <section class="hero">
+            <div class="container switcher">
+                <article class="hero-text tight-stack">
+                    <h1>
+                        Party like it’s <br>
+                        <span>2021</span>
+                    </h1>
+                    <p>Making money is already difficult, spending it should be less stressful. We will help you plan
+                        memorable hangouts and curate personalized fun engagements just the way you like it.</p>
+                    <div>
+                        <div class="tight-stack">
+                            <p>Be the first to get update and read our newsletter 🚀🚀</p>
+                            <form action="" class="tight-stack">
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input id="email" type="email" placeholder="Enter your email address">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cluster">
+                        <p>Check out short video introduction</p>
+                        <button><img src="img/play-button-illustration.svg" alt=""></button>
+                    </div>
+                </article>
+
+                <div class="hero-img">
+                    <img src="img/hero-illustration.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us center">
+            <article class="container tight-stack">
+                <h2>Who we are?</h2>
+                <img src="img/about-us-illustration.png" alt="">
+                <h3>We bring the fun to you</h3>
+                <p>We recommend parties, events, and hangouts tailored for you</p>
+            </article>
+        </section>
+
+        <section class="curate">
+            <div class="container switcher">
+                <article class="tight-stack">
+                    <h2>What we do?</h2>
+                    <h3>Curating the best events for you </h3>
+                    <p>Spend less time thinking about fun activities & more time doing them</p>
+                </article>
+
+                <div>
+                    <img src="img/hangout-illustration.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="event-organizers container center stack">
+            <article class="tight-stack">
+                <h2>Event organizers?</h2>
+                <h3>Manage, market and host your event.</h3>
+                <p>Plan and market your events to an eager audience.</p>
+            </article>
+
+            <article>
+                <ul class="cards">
+                    <li class="card">
+                        <img src="img/beverage-illustration.svg" alt="">
+                        <h4>Manage Event</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum laborum perferendis
+                            corporis explicabo modi minima magnam neque provident quia fuga quam, placeat, nam ullam
+                            aliquam laudantium? Perspiciatis, alias repellat!</p>
+                    </li>
+                    <li class="card">
+                        <img src="img/hand-speaker-illustraton.svg" alt="">
+                        <h4>Market Event</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis qui sapiente dicta sed
+                            labore. Cumque nesciunt iste non fugit? Totam doloribus labore odio ea similique ab sit
+                            deserunt, quis sint animi soluta accusamus natus alias magnam, nihil quo dolor aut!</p>
+                    </li>
+                    <li class="card">
+                        <img src="img/red-carpet-illustration.svg" alt="">
+                        <h4>Host Event</h4>
+                        <hr>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium mollitia
+                            consequuntur placeat assumenda soluta quaerat rerum aliquam exercitationem quidem impedit,
+                            obcaecati, beatae corrupti error tenetur ad facere officia non explicabo officiis.
+                            Cupiditate, rerum voluptatum deleniti quam fugiat ut voluptas dolores qui earum quo.
+                            Necessitatibus!</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="newsletter container center">
+            <article class="tight-stack">
+                <h2>Never miss out on the fun</h2>
+                <p>Get updates on all parties, concerts, and other fun activities around you subscribe to get updated
+                </p>
+                <form action="">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input id="email" type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="switcher">
+        <img src="img/footer-illustration.svg" alt="">
+
+        <div class="footer-nav">
             <nav>
-                <ul>
+                <ul class="cluster">
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Memes</a></li>
@@ -22,129 +159,22 @@
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
-        </header>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <article class="hero-text">
-                        <h1>
-                            Party like it’s
-                            <span>2021</span>
-                        </h1>
-                        <p>Making money is already difficult, spending it should be less stressful. We will help you plan memorable hangouts and curate personalized fun engagements just the way you like it.</p>
-                        <div>
-                            <p>Be the first to get update and read our newsletter 🚀🚀</p>
-                            <form action="">
-                                <label for="email">Email Address</label>
-                                <input id="email" type="email" placeholder="Enter your email address">
-                                <button>Subscribe</button>
-                            </form>
-                        </div>
-                        <p>
-                            Check out short video introduction
-                            <span>
-                                <a href="">
-                                    <img src="" alt="">
-                                </a>
-                            </span>
-                        </p>
-                    </article>
-
-                    <div class="hero-img">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-us">
-                <article class="container">
-                    <h2>Who we are?</h2>
-                    <img src="" alt="">
-                    <h3>We bring the fun to you</h3>
-                    <p>We recommend parties, events, and hangouts tailored for you</p>
-                </article>
-            </section>
-
-            <section class="curate">
-                <div class="container">
-                    <article>
-                        <h2>What we do?</h2>
-                        <h3>Curating the best events for you </h3>
-                        <p>Spend less time thinking about fun activities & more time doing them</p>
-                    </article>
-
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <section class="event-organizers">
-                <article>
-                    <h2>Event organizers?</h2>
-                    <h3>Manage, market and host your event.</h3>
-                    <p>Plan and market your events to an eager audience.</p>
-                </article>
-
-                <article>
-                    <ul class="cards">
-                        <li class="card">
-                            <img src="" alt="">
-                            <h4>Manage Event</h4>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum laborum perferendis corporis explicabo modi minima magnam neque provident quia fuga quam, placeat, nam ullam aliquam laudantium? Perspiciatis, alias repellat!</p>
-                        </li>
-                        <li class="card">
-                            <img src="" alt="">
-                            <h4>Market Event</h4>
-                            <hr>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis qui sapiente dicta sed labore. Cumque nesciunt iste non fugit? Totam doloribus labore odio ea similique ab sit deserunt, quis sint animi soluta accusamus natus alias magnam, nihil quo dolor aut!</p>
-                        </li>
-                        <li class="card">
-                            <img src="" alt="">
-                            <h4>Host Event</h4>
-                            <hr>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium mollitia consequuntur placeat assumenda soluta quaerat rerum aliquam exercitationem quidem impedit, obcaecati, beatae corrupti error tenetur ad facere officia non explicabo officiis. Cupiditate, rerum voluptatum deleniti quam fugiat ut voluptas dolores qui earum quo. Necessitatibus!</p>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="container">
-                <article>
-                    <h2>Never miss out on the fun</h2>
-                    <p>Get updates on all parties, concerts, and other fun activities around you subscribe to get updated</p>
-                    <form action="">
-                        <label for="email">Email Address</label>
-                        <input id="email" type="email" placeholder="Enter your email address">
-                        <button>Subscribe</button>
-                    </form>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-            <img src="" alt="">
-            <nav>
-                <nav>
-                    <ul>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Memes</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </nav>
+            <div>
                 <hr>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                <div class="cluster">
+                    <img src="img/stay-jiggy-logo.svg" alt="">
+                    <div class="cluster">
+                        <a href="#"><img src="img/twitter-logo.svg" alt="#"></a>
+                        <a href="#"><img src="img/instagram-logo.svg" alt=""></a>
+                        <a href="#"><img src="img/tik-tok-logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+
+    <script src="js/burger-menu.js" type="module" defer></script>
+</body>
 
 </html>
