@@ -144,6 +144,10 @@ button[type=submit] {
     color: var(--clr-white);
 }
 
+.newsletter form {
+    border-radius: 100vw;
+}
+
 .newsletter input[type=email] {
     border-radius: 100vw;
 }
