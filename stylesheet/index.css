@@ -1,9 +1,3 @@
-/* MAIN */
-main {
-    margin-block-start: 0 !important;
-    /* stack component is a class selector and has higher specificity than element selector, I am overriding with !important */
-}
-
 /* HERO */
 .hero {
     background-color: rgba(229, 229, 229, .2);

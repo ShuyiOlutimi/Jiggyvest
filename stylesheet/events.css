@@ -1,0 +1,155 @@
+/* SECTIONAL STYLING */
+/* FIND EVENT */
+.find-event {
+    margin-block-start: 0 !important;
+    padding-block: 7rem;
+    background-image: url(../img/events-hero.png);
+}
+
+.find-event .center {
+    text-align: left;
+}
+
+.find-event h2 {
+    color: var(--clr-white);
+    font-size: var(--fs-24);
+    font-family: var(--ff-text);
+    text-align: center;
+}
+
+/* EVENT SEARCH */
+.find-event form {
+    width: 100%;
+}
+
+.find-event input {
+    padding: .45rem;
+}
+
+/* EVENT ROASTER */
+/* ROSTER GRID */
+.event-roster .grid {
+    display: flex;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @supports (width: min(250px, 100%)) {
+   .event-roster .grid {
+      grid-template-columns: repeat(auto-fit,minmax(min(250px, 100%), 1fr));
+    }
+  }
+
+  /* EVENT CARD */
+.event-roster .card {
+    position: relative;
+    background-color: var(--clr-jiggy-azure);
+    border-radius: .75rem;
+    padding: 1rem;
+}
+
+.event-roster .card:hover {
+    box-shadow: 0 0 0 0.25rem;
+}
+
+.event-roster .card a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.event-roster .card a:focus {
+    outline: 3px solid underline;
+}
+
+.event-roster .card:focus-within {
+    box-shadow: 0 0 0 0.25rem;
+    outline: 2px solid transparent;
+}
+
+.event-roster .card:focus-within a:focus {
+    outline: none;
+}
+
+.event-roster .card button {
+    position: relative;
+}
+
+/* EVENT CARD TEXT TOLERANCE */
+.event-roster .card,
+.event-roster .card .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-roster .card .text {
+    flex-grow: 1;
+    max-width: 60ch;
+}
+
+.event-roster .card .text > *+* {
+    margin-block-start: .45rem;
+}
+
+.event-roster .card .text :last-child {
+    margin-block-start: auto;
+}
+
+.event-roster .card .text :nth-last-child(2) {
+    margin-block-end: .75rem;
+}
+
+/* EVENT ROASTER TEXT STYLING */
+.event-roster h1,
+.event-roster h2,
+.event-roster h3,
+.event-roster h4 {
+    font-family: var(--ff-text);
+}
+
+.event-roster h1,
+.event-roster h2 {
+    color: var(--clr-jiggy-blue);
+}
+
+.event-roster h1 {
+    font-size: var(--fs-24);
+}
+
+.event-name {
+    font-size: var(--fs-24);
+}
+
+.event-date,
+.event-location {
+    font-size: var(--fs-16);
+}
+
+.event-price {
+    color: var(--clr-jiggy-red);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-24);
+}
+
+.event-roster .card button {
+    display: inline-block;
+    padding: .75rem;
+    color: white;
+    background-color: var(--clr-jiggy-blue);
+    text-align: center;
+}
+
+/* EVENT ROSTER IMAGE */
+.event-roster .card .img {
+    height: 10rem;
+}
+
+.event-roster .card .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: .75rem;
+}

@@ -75,9 +75,10 @@ select {
 
 /* GLOBAL VARIABLES */
 :root {
-    /* Font  */
-    font-family: 'Cherry Cream Soda', cursive;
-    font-family: 'Poppins', sans-serif;
+    /* Font Family*/
+    --ff-heading: 'Cherry Cream Soda', cursive;
+    --ff-text: 'Poppins', sans-serif;
+    font-family: var(--ff-text);
 
     /* Font sizes */
     --fs-12: .75rem;
@@ -85,6 +86,7 @@ select {
     --fs-16: 1rem;
     --fs-18: 1.125rem;
     --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
     --fs-32: 2rem;
     --fs-40: 2.5rem;
 
@@ -147,7 +149,7 @@ h4 {
 h1,
 h2,
 h3 {
-    font-family: 'Cherry Cream Soda', cursive;
+    font-family: var(--ff-heading);
     max-width: 30ch;
 }
 
@@ -316,7 +318,7 @@ button {
 /* SECTIONAL STYLING */
 /* HEADER */
 header {
-    padding-block: var(--s0);
+    padding-block: var(--s-1);
 }
 
 header article {
@@ -327,7 +329,11 @@ header.cluster {
     justify-content: space-between;
 }
 
-
+/* MAIN */
+main {
+    margin-block-start: 0 !important;
+    /* stack component is a class selector and has higher specificity than element selector, I am overriding with !important */
+}
 
 /* FOOTER */
 footer .cluster {
@@ -387,14 +393,14 @@ footer hr {
   .burger-menu__bar::before,
   .burger-menu__bar::after {
     display: block;
-    width: 24px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     background: var(--clr-jiggy-red);
-    border: 1px solid var(--clr-jiggy-red);
+    border: 2px solid var(--clr-jiggy-red);
     position: absolute;
     border-radius: 3px;
     left: 50%;
-    margin-left: -12px;
+    margin-left: -10px;
     transition: transform 350ms ease-in-out;
   }
   
@@ -409,11 +415,11 @@ footer hr {
   }
   
   .burger-menu__bar::before {
-    top: -8px;
+    top: -12px;
   }
   
   .burger-menu__bar::after {
-    bottom: -8px;
+    bottom: -12px;
   }
   
   .burger-menu[enabled='true'] .burger-menu__trigger {
@@ -492,6 +498,10 @@ footer hr {
 :focus {
     outline: 3px solid currentColor;
     outline-offset: .2rem;
+}
+
+button:focus {
+    outline: 3px solid black;
 }
 
 
