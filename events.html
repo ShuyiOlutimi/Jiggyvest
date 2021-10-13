@@ -43,10 +43,14 @@
             <div class="container center tight-stack">
                 <h2>Find latest events close to you</h2>
                 <form action="" class="cluster">
-                    <label for="search-event-location"></label>
-                    <input id="search-event-location" type="text" name="search-event-location" placeholder="Location">
-                    <label for="search-event-name"></label>
-                    <input id="search-event-name" type="text" name="search-event-name" placeholder="Search for any event">
+                    <div>
+                        <label for="search-event-location" class="sr-only">Search event by location</label>
+                        <input id="search-event-location" type="text" name="search-event-location" placeholder="Location">
+                    </div>
+                    <div>
+                        <label for="search-event-name" class="sr-only">Search event by name</label>
+                        <input id="search-event-name" type="text" name="search-event-name" placeholder="Search for any event">
+                    </div>
                 </form>
             </div>
         </section>

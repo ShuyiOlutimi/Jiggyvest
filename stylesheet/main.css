@@ -428,7 +428,7 @@ footer hr {
     height: 2rem;
     /* Nice big tap target */
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -447,6 +447,8 @@ footer hr {
     background-image: url(../img/spiral-background.png);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    
+    z-index: 1;
   }
   
   .burger-menu[enabled='true'] .navigation ul {
