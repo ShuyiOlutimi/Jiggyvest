@@ -103,6 +103,8 @@ select {
     --clr-jiggy-red: #EE2526;
     --clr-jiggy-grey: #696969;
     --clr-faded-grey: #BDBDBD;
+    --clr-invisible-grey: #F2F2F2;
+    --clr-dr-white: #FAFAFA;
     --clr-jiggy-azure: #F3F9FA;
     --clr-jiggy-whisper: #E5E5E5;
 
@@ -292,6 +294,30 @@ button {
     .grid {
       grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     }
+  }
+
+  .frame {
+    padding-bottom: calc(var(--n) / var(--d) * 100%);
+    position: relative;
+  }
+  
+  .frame > * {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frame > img,
+  .frame > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 /* UTILITIES */
 /* These styles do only one thing and one thing only */
