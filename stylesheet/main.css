@@ -525,7 +525,7 @@ footer hr {
 /* FOCUS */
 :focus {
     outline: 3px solid currentColor;
-    outline-offset: .2rem;
+    outline-offset: .5rem;
 }
 
 button:focus {
