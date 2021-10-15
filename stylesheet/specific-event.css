@@ -4,9 +4,8 @@
 }
 
 .event-details {
-    background-color: var(--clr-dr-white);
     text-align: left;
-    max-width: 60rem;
+    max-width: 75rem;
 }
 
 .event-details h2 {
@@ -52,9 +51,12 @@
     width: 100%;
     padding-block: var(--s2);
     padding-inline: var(--s1);
+    background-color: var(--clr-dr-white);
+    
 }
 
 .specific-event-media {
+    background-color: var(--clr-dr-white);
     text-align: left;
     width: 100%;
     padding-inline: var(--s1);
