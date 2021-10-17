@@ -20,14 +20,31 @@
 /* EVENT SEARCH */
 .find-event form {
     position: relative;
+    padding: 1rem;
+    justify-items: center;
 }
 
+.find-event form::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-color: #fff;
+    border-radius: 6px;
+}
 
+.find-event form div {
+    position: relative;
+}
 
-.find-event >div {
+.find-event .form-child-wrap>div {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80vw;
+    max-width: 100%;
 }
 
 .find-event input {
@@ -37,21 +54,37 @@
     border-radius: 6px;
 }
 
+.search-event-location {
+    position: relative;
+}
+
+.search-event-location::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/location-icon.svg);
+}
+
 /* EVENT ROASTER */
 /* ROSTER GRID */
 .event-roster .grid {
     display: flex;
     display: grid;
     gap: 1.5rem;
-  }
-  
-  @supports (width: min(250px, 100%)) {
-   .event-roster .grid {
-      grid-template-columns: repeat(auto-fit,minmax(min(250px, 100%), 1fr));
-    }
-  }
+}
 
-  /* EVENT CARD */
+@supports (width: min(250px, 100%)) {
+    .event-roster .grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+}
+
+/* EVENT CARD */
 .event-roster .card {
     position: relative;
     background-color: var(--clr-jiggy-azure);
@@ -101,7 +134,7 @@
     max-width: 60ch;
 }
 
-.event-roster .card .text > *+* {
+.event-roster .card .text>*+* {
     margin-block-start: .45rem;
 }
 
