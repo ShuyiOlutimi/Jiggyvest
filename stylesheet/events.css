@@ -94,7 +94,7 @@
 }
 
 .event-roster .card:hover,
-.event-roster .card a:hover {
+.event-roster .card a::after:hover {
     scale: 1.1;
 }
 
