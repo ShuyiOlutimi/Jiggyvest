@@ -791,13 +791,19 @@ form.email-form {
     background-color: var(--clr-white);
     border-radius: .75rem;
     padding: 1rem;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    transition: scale 400ms ease-in-out;
-    will-change: scale;
+    box-shadow:
+    1px 2px 2px hsl(240deg 60% 50% / 0.2),
+    2px 4px 4px hsl(240deg 60% 50% / 0.2);
+    transition: scale 400ms ease-in-out, box-shadow 400ms ease-in-out;
+    will-change: scale, box-shadow;
 }
 
 .event-roster .card:hover {
     scale: 1.1;
+    box-shadow:
+    4px 8px 8px hsl(240deg 60% 50% / 0.2),
+    8px 16px 16px hsl(240deg 60% 50% / 0.2),
+    16px 32px 32px hsl(240deg 60% 50% / 0.2);
 }
 
 .event-roster .card a::after {
