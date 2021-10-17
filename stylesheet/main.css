@@ -582,6 +582,7 @@ form.email-form {
     form.email-form {
         flex-direction: column;
         background-color: #ffffff00;
+        padding: 0;
     }
 }
 
