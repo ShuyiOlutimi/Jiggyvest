@@ -176,7 +176,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline 3px currentColor;
+    text-decoration: underline 3px var(--clr-jiggy-red);
     cursor: pointer;
 }
 
@@ -189,6 +189,10 @@ button {
     padding-inline: var(--s1);
     border-radius: 6px;
     text-align: center;
+}
+
+button:active {
+
 }
 
 /* LAYOUT STYLING */
@@ -536,12 +540,8 @@ footer hr {
 
 /* FOCUS */
 :focus {
-    outline: 3px solid currentColor;
+    outline: 3px solid var(--clr-jiggy-red);
     outline-offset: .5rem;
-}
-
-button:focus {
-    outline: 3px solid black;
 }
 
 /* LANDING PAGE STYLES */
@@ -793,15 +793,15 @@ form.email-form {
     padding: 1rem;
     box-shadow:
     1px 2px 2px hsl(240deg 60% 50% / 0.2),
-    2px 4px 4px hsl(240deg 60% 50% / 0.2);
-    transition: scale 400ms ease-in-out, box-shadow 400ms ease-in-out;
+    2px 4px 4px hsl(240deg 60% 50% / 0.2),
+    4px 8px 8px hsl(240deg 60% 50% / 0.2);
+    transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;
     will-change: scale, box-shadow;
 }
 
 .event-roster .card:hover {
-    scale: 1.1;
+    transform: translateY(-.5rem)translateX(-.5rem);
     box-shadow:
-    4px 8px 8px hsl(240deg 60% 50% / 0.2),
     8px 16px 16px hsl(240deg 60% 50% / 0.2),
     16px 32px 32px hsl(240deg 60% 50% / 0.2);
 }
