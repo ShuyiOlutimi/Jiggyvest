@@ -73,7 +73,7 @@
 .event-roster .grid {
     display: flex;
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 @supports (width: min(250px, 100%)) {
