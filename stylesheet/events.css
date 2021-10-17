@@ -93,7 +93,8 @@
     will-change: scale;
 }
 
-.event-roster .card:hover {
+.event-roster .card:hover,
+.event-roster .card a:hover {
     scale: 1.1;
 }
 
