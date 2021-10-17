@@ -1,11 +1,11 @@
 /* HERO */
 .hero {
     background-color: rgba(229, 229, 229, .2);
-    padding-block-start: var(--s4);
+    padding-block-start: clamp(2.67rem,2.07rem + 3vw,4.21rem);
 }
 
 .hero-text {
-    padding-block-end: var(--s3);
+    padding-block-end: clamp(2.67rem,2.07rem + 3vw,4.21rem); /* Ensure there is always space beneath text on fullscreen so hero illustration image touches edge of div but not text*/
 }
 
 .hero h1 {
@@ -16,6 +16,12 @@
     color: var(--clr-jiggy-red);
 }
 
+.hero-text button:not([type=submit]) {
+    background-color: #ffffff00;
+    padding: 0;
+    margin: 0;
+}
+
 form {
     display: flex;
     justify-content: space-between;
@@ -23,9 +29,10 @@ form {
     background-color: var(--clr-white);
     padding: .45rem;
     border-radius: 6px;
+    max-width: 80vw;
 }
 
-@media (max-width:480px) {
+@media (max-width:640px) {
     form {
         flex-direction: column;
         background-color: #ffffff00;
@@ -35,10 +42,10 @@ form {
 input[type=email] {
     all: unset;
     color: var(--clr-faded-grey);
-    max-width: 80vw;
+    max-width: 50vw;
 }
 
-@media (max-width:480px) {
+@media (max-width:640px) {
     input[type=email] {
         border: 2px solid currentColor;
         border-radius: 6px;
@@ -48,17 +55,7 @@ input[type=email] {
     }
 }
 
-button[type=submit] {
-    all: unset;
-    color: var(--clr-white);
-    display: inline-block;
-    background-color: var(--clr-jiggy-red);
-    padding-block: var(--s-1);
-    padding-inline: var(--s1);
-    border-radius: 6px;
-}
-
-@media (max-width:480px) {
+@media (max-width:640px) {
     button[type="submit"] {
         margin-block-start: var(--s1);
         align-self: flex-start;
@@ -71,7 +68,7 @@ button[type=submit] {
 
 /* ABOUT US */
 .about-us {
-    margin-block-start: var(--s4);
+    margin-block: clamp(2.67rem,2.07rem + 3vw,4.21rem);
 }
 
 .about-us h2 {
@@ -93,7 +90,10 @@ button[type=submit] {
 .curate {
     background-color: var(--clr-jiggy-azure);
     background-image: url(../img/spiral-background.png);
-    padding-block: var(--s4);
+}
+
+.curate-text {
+    padding-block-start: clamp(2.67rem,2.07rem + 3vw,4.21rem);
 }
 
 .curate .switcher {
@@ -124,6 +124,7 @@ button[type=submit] {
     max-width: 50rem;
     text-align: center;
     padding-block: var(--s3);
+    padding-inline: var(--s1);
     background-color: var(--clr-jiggy-blue);
     border-radius: 40px;
 }
@@ -138,21 +139,15 @@ button[type=submit] {
     color: var(--clr-white);
 }
 
-.newsletter form {
+.newsletter form,
+.newsletter button[type="submit"],
+.newsletter input[type="email"] {
     border-radius: 100vw;
 }
 
-.newsletter input[type=email] {
-    border-radius: 100vw;
-}
-
-.newsletter button[type=submit] {
-    border-radius: 100vw;
-}
-
-@media (max-width:480px) {
-    .newsletter button[type=submit],
-    .newsletter input[type=email] {
-        align-self: center;
+@media (max-width:640px) {
+    .newsletter form {
+        display: inline-grid;
+        justify-items: center;
     }
 }
