@@ -576,24 +576,23 @@ form.email-form {
     background-color: var(--clr-white);
     padding: .45rem;
     border-radius: 6px;
-    max-width: 80vw;
 }
 
-@media (max-width:640px) {
+/* @media (max-width:640px) {
     form.email-form {
         flex-direction: column;
         background-color: #ffffff00;
         padding: 0;
     }
-}
+} */
 
 .email-form input[type=email] {
     all: unset;
     color: var(--clr-faded-grey);
-    max-width: 50vw;
+    max-width: 40vw;
 }
 
-@media (max-width:640px) {
+/* @media (max-width:640px) {
     .email-form input[type=email] {
         border: 2px solid currentColor;
         border-radius: 6px;
@@ -608,7 +607,7 @@ form.email-form {
         margin-block-start: var(--s1);
         align-self: flex-start;
     }
-}
+} */
 
 .hero-img {
     align-self: center;
@@ -677,27 +676,10 @@ form.email-form {
     border-radius: 40px;
 }
 
-.newsletter > article {
-    padding-inline: var(--s1);
-}
-
 .newsletter h2,
 .newsletter h3,
 .newsletter p {
     color: var(--clr-white);
-}
-
-.newsletter form.email-form,
-.newsletter button[type="submit"],
-.newsletter .email-form input[type=email] {
-    border-radius: 100vw;
-}
-
-@media (max-width:640px) {
-    .newsletter form.email-form {
-        display: inline-grid;
-        justify-items: center;
-    }
 }
 
 /* EVENT SEARCH PAGE STYLE */
