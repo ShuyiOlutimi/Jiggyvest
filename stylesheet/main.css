@@ -602,22 +602,6 @@ form.email-form {
     max-width: 30vw;
 }
 
-/* @media (max-width:640px) {
-    .email-form input[type=email] {
-        border: 2px solid currentColor;
-        border-radius: 6px;
-        align-self: flex-start;
-        background-color: var(--clr-white);
-        padding: .65rem;
-    }
-}
-
-@media (max-width:640px) {
-    .email-form button[type="submit"] {
-        margin-block-start: var(--s1);
-        align-self: flex-start;
-    }
-} */
 @media (max-width:330px) {
     .email-form input[type=email] {
         border: 2px solid currentColor;
