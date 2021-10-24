@@ -193,8 +193,6 @@ button {
     text-align: center;
 }
 
-button:active {}
-
 /* LAYOUT STYLING */
 .stack>* {
     margin-top: 0;
