@@ -598,6 +598,7 @@ form.email-form {
     all: unset;
     color: var(--clr-faded-grey);
     max-width: 30vw;
+    font-size: var(--fs-12);
 }
 
 @media (max-width:330px) {
