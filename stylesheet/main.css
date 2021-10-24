@@ -650,7 +650,7 @@ form.email-form {
 .curate {
     background-color: var(--clr-jiggy-azure);
     background-image: url(../img/spiral-background.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .curate .container {
