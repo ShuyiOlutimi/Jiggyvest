@@ -614,7 +614,7 @@ form.email-form {
 .email-form input[type=email] {
     all: unset;
     color: var(--clr-faded-grey);
-    max-width: 30vw;
+    max-width: 40vw;
 }
 
 @media (min-width:768px) {
