@@ -334,8 +334,8 @@ button {
 /* UTILITIES */
 /* These styles do only one thing and one thing only */
 .container {
-    padding-inline-start: var(--s2);
-    padding-inline-end: var(--s2);
+    padding-inline-start: var(--s1);
+    padding-inline-end: var(--s1);
     max-width: 95rem;
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -615,7 +615,6 @@ form.email-form {
     all: unset;
     color: var(--clr-faded-grey);
     max-width: 30vw;
-    font-size: var(--fs-12);
 }
 
 @media (min-width:768px) {
