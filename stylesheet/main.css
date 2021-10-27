@@ -600,7 +600,7 @@ button.burger-menu__trigger {
     }
 }
 
-.hero-text >*+* {
+.hero-text>*+* {
     margin-block-start: 2rem;
 }
 
@@ -881,6 +881,7 @@ form.email-form {
     input[id=search-event-location] {
         max-width: 12ch;
     }
+
     input[id=search-event-name] {
         width: 70ch;
     }
@@ -1032,6 +1033,7 @@ form.email-form {
 .event-details {
     text-align: left;
     max-width: 50rem;
+    margin-block-end: var(--s5);
 }
 
 .event-details h2 {
