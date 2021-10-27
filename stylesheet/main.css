@@ -572,18 +572,6 @@ button.burger-menu__trigger {
     }
 }
 
-@media (max-width: 850px) {
-    .hero>.switcher {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero>.switcher>* {
-        flex-grow: 0;
-        flex-basis: 100%;
-    }
-}
-
 .hero-text {
     padding-block-end: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
     /* Ensure there is always space beneath text on fullscreen so hero illustration image touches edge of div but not text*/
@@ -680,6 +668,13 @@ form.email-form {
     align-self: end;
 }
 
+
+@media (max-width: 850px) {
+    .hero-img {
+        align-self: center;
+    }
+}
+
 /* ABOUT US */
 .about-us {
     margin-block: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
@@ -709,13 +704,12 @@ form.email-form {
 .curate .container {
     padding-inline-end: 0;
     margin-inline-end: 0;
-    /* margin-inline-start: var(--s2); */
     max-width: 100%;
 }
 
-@media (min-width:768px) {
+@media (min-width:80rem) {
     .curate .container {
-        margin-inline-start: var(--s3);
+        margin-inline-start: var(--s5);
     }
 }
 
