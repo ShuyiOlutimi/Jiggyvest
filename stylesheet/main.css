@@ -589,6 +589,20 @@ button.burger-menu__trigger {
     color: var(--clr-jiggy-red);
 }
 
+.underline-img {
+    display: inline;
+    background-image: url(../img/underline-image.svg);
+    background-repeat: no-repeat;
+    background-position: 0 1.06em;
+    background-size: 100% 2rem;
+    padding-block-end: 20px;
+}
+
+@media (max-width:768px) {
+    .underline-img {
+    }
+}
+
 @media (min-width:768px) {
     .hero h1 {
         font-size: 50px;
