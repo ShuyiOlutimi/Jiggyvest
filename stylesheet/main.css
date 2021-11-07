@@ -713,7 +713,7 @@ form.email-form {
 
 @media (min-width:80rem) {
     .curate .container {
-        margin-inline-start: var(--s5);
+        margin-inline-start: var(--s3);
     }
 }
 
