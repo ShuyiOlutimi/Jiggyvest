@@ -711,9 +711,9 @@ form.email-form {
     max-width: 100%;
 }
 
-@media (min-width:80rem) {
+@media (min-width:1000px) {
     .curate .container {
-        margin-inline-start: var(--s3);
+        margin-inline-start: 5vw;
     }
 }
 
