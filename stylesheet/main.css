@@ -103,7 +103,7 @@ select {
     --clr-white: #fff;
     --clr-jiggy-blue: #097F9A;
     --clr-jiggy-red: #EE2526;
-    --clr-jiggy-grey: #828282;
+    --clr-jiggy-grey: #333333;
     --clr-faded-grey: #BDBDBD;
     --clr-invisible-grey: #F2F2F2;
     --clr-dr-white: #FAFAFA;
@@ -415,7 +415,7 @@ footer hr {
     background-color: var(--clr-jiggy-blue);
     color: var(--clr-white);
     padding-block: 1.5rem;
-    padding-inline: 1.5rem;
+    padding-inline: 3rem;
 }
 
 .footer-nav> :nth-child(2) {
@@ -566,12 +566,6 @@ button.burger-menu__trigger {
     padding-block-start: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
 }
 
-@media (min-width:768px) {
-    .hero {
-        padding-block-start: var(--s5);
-    }
-}
-
 .hero-text {
     padding-block-end: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
     /* Ensure there is always space beneath text on fullscreen so hero illustration image touches edge of div but not text*/
@@ -596,11 +590,6 @@ button.burger-menu__trigger {
     background-position: 0 1.06em;
     background-size: 100% 2rem;
     padding-block-end: 20px;
-}
-
-@media (max-width:768px) {
-    .underline-img {
-    }
 }
 
 @media (min-width:768px) {
@@ -638,6 +627,7 @@ form.email-form {
     all: unset;
     color: var(--clr-faded-grey);
     max-width: 40vw;
+    padding: 0 1.5rem;
 }
 
 @media (min-width:768px) {
