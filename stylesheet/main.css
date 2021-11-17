@@ -571,7 +571,7 @@ button.burger-menu__trigger {
     /* background-color: rgba(229, 229, 229, .2); */
     background-image: url(../img/hero-background.svg);
     background-repeat: repeat-x;
-    background-position: centertop;
+    background-position: top;
     background-size: cover;
     padding-block-start: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
 }
