@@ -634,7 +634,7 @@ form.email-form {
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-white);
-    padding: .45rem;
+    padding: .4rem;
     border-radius: 6px;
 }
 
@@ -643,7 +643,7 @@ form.email-form {
     all: unset;
     color: var(--clr-faded-grey);
     max-width: 40vw;
-    padding: 0 1.5rem;
+    padding-inline-start: .5rem;
 }
 
 @media (min-width:768px) {
@@ -654,6 +654,7 @@ form.email-form {
 
 @media (max-width:330px) {
     .email-form input[type=email] {
+        max-width: 65vw;
         border: 2px solid currentColor;
         border-radius: 6px;
         align-self: flex-start;
@@ -760,7 +761,7 @@ form.email-form {
     .event-organizers .grid {
         grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
     }
-    
+
 }
 
 .event-organizers .card {
@@ -831,6 +832,31 @@ form.email-form {
 @media (min-width:768px) {
     .newsletter form.email-form {
         width: 85%;
+    }
+}
+
+@media (max-width:370px) {
+    .newsletter .email-form input[type=email] {
+        max-width: 50vw;
+        border: 2px solid currentColor;
+        border-radius: 6px;
+        align-self: flex-start;
+        background-color: var(--clr-white);
+        padding: .65rem;
+        align-self: center;
+        text-align: left;
+    }
+
+    .newsletter .email-form button[type="submit"] {
+        margin-block-start: var(--s1);
+        align-self: center;
+    }
+
+    .newsletter form.email-form {
+        flex-direction: column;
+        background-color: #ffffff00;
+        padding: 0;
+        margin-inline: auto;
     }
 }
 
