@@ -387,6 +387,12 @@ header.cluster {
     justify-content: space-between;
 }
 
+@media (max-width:620px) {
+    header a {
+        font-size: var(--fs-18);
+    }
+}
+
 /* MAIN */
 main {
     margin-block-start: 0 !important;
