@@ -568,7 +568,11 @@ button.burger-menu__trigger {
 /* LANDING PAGE STYLES */
 /* HERO */
 .hero {
-    background-color: rgba(229, 229, 229, .2);
+    /* background-color: rgba(229, 229, 229, .2); */
+    background-image: url(../img/hero-background.svg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: cover;
     padding-block-start: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
 }
 
@@ -640,10 +644,10 @@ form.email-form {
 
 
 .email-form input[type=email] {
-    all: unset;
+    border: none;
     color: var(--clr-faded-grey);
     max-width: 40vw;
-    padding-inline-start: .5rem;
+    padding-inline-start: 1.5rem;
 }
 
 @media (min-width:768px) {
@@ -699,6 +703,10 @@ form.email-form {
 /* ABOUT US */
 .about-us {
     margin-block: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+    background-image: url(../img/who-we-are-background.svg);
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    background-size: cover;
 }
 
 .about-us h2 {
@@ -712,6 +720,12 @@ form.email-form {
 
 .about-us p {
     font-weight: var(--fw-700);
+}
+
+@media (max-width:400px) {
+    .about-us p {
+        font-weight: var(--fw-400);
+    }
 }
 
 /* WHAT WE DO */
