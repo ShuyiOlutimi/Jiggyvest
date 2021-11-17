@@ -376,7 +376,7 @@ button {
 /* SECTIONAL STYLING */
 /* HEADER */
 header {
-    padding-block: var(--s-1);
+    padding-block: var(--s-5);
 }
 
 header article {
