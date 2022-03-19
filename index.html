@@ -21,9 +21,7 @@
 
 <body class="[ stack ]">
     <header class="[ container ] [ cluster ]">
-        <a href="#">
-            <img src="img/jiggyvest-red.svg" alt="Jiggyvest Logo">
-        </a>
+        <img src="img/jiggyvest-red.svg" alt="Jiggyvest Logo">
 
         <burger-menu max-width="620">
             <nav class="[ navigation ]" aria-label="primary">
@@ -63,7 +61,7 @@
                     </div>
                     <div class="[ cluster ]">
                         <p>Check out short video introduction</p>
-                        <button><img src="img/play-button-illustration.svg" alt=""></button>
+                        <button><img src="img/play-button-illustration.svg" alt="play video"></button>
                     </div>
                 </article>
 
@@ -73,19 +71,19 @@
             </div>
         </section>
 
-        <section class="[ about-us ] [ center ]">
+        <section class="[ about-us ] [ center ]" aria-labelledby="who-we-are">
             <article class="[ container ] [ center ] [ tight-stack ] [ text-center ]">
-                <h2>Who we are?</h2>
+                <h2 id="who-we-are">Who we are?</h2>
                 <img src="img/about-us-illustration.png" alt="">
                 <h3>We bring the fun <br> to you</h3>
                 <p>We recommend parties, events, and <br> hangouts tailored for you</p>
             </article>
         </section>
 
-        <section class="[ curate ]">
+        <section class="[ curate ]" aria-labelledby="what-we-do">
             <div class="[ container ] [ switcher ]">
                 <article class="[ tight-stack ] [ curate-text ]">
-                    <h2>What we do?</h2>
+                    <h2 id="what-we-do">What we do?</h2>
                     <h3>Curating the best <br> events for you </h3>
                     <p>Spend less time thinking about fun activities & more time doing them</p>
                 </article>
@@ -94,10 +92,10 @@
             </div>
         </section>
 
-        <section class="[ event-organizers ] [ container ] [ stack ]">
+        <section class="[ event-organizers ] [ container ] [ stack ]" aria-labelledby="our-services">
             <article class="[ tight-stack ] [ center ] [ text-center ]">
                 <h2>Event organizers?</h2>
-                <h3>Manage, market and host your event.</h3>
+                <h3 id="our-services">Manage, market and host your event.</h3>
                 <p>Plan and market your events to an <br> eager audience.</p>
             </article>
 
@@ -131,7 +129,7 @@
             </article>
         </section>
 
-        <section class="[ container ]">
+        <section class="[ container ]" aria-label="newsletter subscription">
             <article class="[ tight-stack ] [ center ] [ newsletter ]">
                 <h2>Never miss out on the fun</h2>
                 <p>Get updates on all parties, concerts, and other fun activities around you subscribe to get updated
@@ -149,7 +147,7 @@
         <img src="img/footer-illustration.svg" alt="">
 
         <div class="footer-nav">
-            <nav>
+            <nav aria-label="secondary">
                 <ul class="[ cluster ]">
                     <li><a href="#">Home</a></li>
                     <li><a href="/events.html">Events</a></li>
@@ -165,10 +163,9 @@
                 <div class="[ cluster ]">
                     <img src="img/stay-jiggy-logo.svg" alt="">
                     <div class="[ cluster ]">
-                        <a href="https://twitter.com/jiggyvest"><img src="img/twitter-logo.svg" alt="twitter link"></a>
-                        <a href="https://instagram.com/jiggyvest"><img src="img/instagram-logo.svg"
-                                alt="instagram link"></a>
-                        <a href="#"><img src="img/tik-tok-logo.svg" alt="tik-tok link"></a>
+                        <a href="https://twitter.com/jiggyvest" aria-label="visit our twitter"><img src="img/twitter-logo.svg" alt=""></a>
+                        <a href="https://instagram.com/jiggyvest" aria-label="visit our instagram"><img src="img/instagram-logo.svg" alt=""></a>
+                        <a href="#" aria-label="visit our tiktok"><img src="img/tik-tok-logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>

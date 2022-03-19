@@ -20,8 +20,8 @@
 
 <body class="[ stack ]">
     <header class="[ container ] [ cluster ]">
-        <a href="/index.html">
-            <img src="img/jiggyvest-red.svg" alt="Jiggyvest Logo">
+        <a href="/index.html" aria-label="Jiggyvest Homepage">
+            <img src="img/jiggyvest-red.svg" alt="">
         </a>
 
         <burger-menu max-width="600">
@@ -40,9 +40,9 @@
 
     <main class="[ stack ]">
         <section class="[ find-event ]">
-            <div class="[ container ] [ center ] [ text-center ] [ tight-stack ]">
-                <h2>Find latest events close to you</h2>
-                <form action="">
+          <div class="[ container ] [ center ] [ text-center ] [ tight-stack ]">
+                <h2 id="find-event">Find latest events close to you</h2>
+                <form action="" role="search">
                     <div class="[ form-child-wrap ] [ cluster ]">
                         <div class="[ form-label-hold ]">
                             <div class="[ cluster ]">
@@ -68,8 +68,8 @@
             </div>
         </section>
 
-        <section class="[ event-roster ] [ container ] [ stack ]">
-            <h1>All events</h1>
+        <section class="[ event-roster ] [ container ] [ stack ]" aria-labelledby="all-events">
+            <h1 id="all-events">All events</h1>
             <ul class="[ grid ]">
                 <li class="[ card ] [ tight-stack ]">
                     <div class="[ img ]">
@@ -168,10 +168,10 @@
         <img src="img/footer-illustration.svg" alt="">
 
         <div class="footer-nav">
-            <nav>
+            <nav aria-label="secondary">
                 <ul class="[ cluster ]">
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="#">Events</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Memes</a></li>
                     <li><a href="#">Stories</a></li>
@@ -184,9 +184,9 @@
                 <div class="[ cluster ]">
                     <img src="img/stay-jiggy-logo.svg" alt="">
                     <div class="[ cluster ]">
-                        <a href="https://twitter.com/jiggyvest"><img src="img/twitter-logo.svg" alt="twitter link"></a>
-                        <a href="https://instagram.com/jiggyvest"><img src="img/instagram-logo.svg" alt="instagram link"></a>
-                        <a href="#"><img src="img/tik-tok-logo.svg" alt="tik-tok link"></a>
+                        <a href="https://twitter.com/jiggyvest" aria-label="visit our twitter"><img src="img/twitter-logo.svg" alt=""></a>
+                        <a href="https://instagram.com/jiggyvest" aria-label="visit our instagram"><img src="img/instagram-logo.svg" alt=""></a>
+                        <a href="#" aria-label="visit our tiktok"><img src="img/tik-tok-logo.svg" alt=""></a>
                     </div>
                 </div>
             </div>
